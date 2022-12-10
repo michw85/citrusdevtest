@@ -6,11 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Citrusdev</title>
-    <link rel="stylesheet" href="css/normolize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://db.onlinewebfonts.com/c/4387b781fdcc752283b72bdc76757065?family=All+Round+Gothic+W03+Book"
+        type="text/css" />
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 
-<body>
+<body class="loading">
+
+    <div id="loader"></div>
+
     <header class="header" id="top">
         <div class="nav">
             <div class="container-lg cont">
@@ -33,10 +42,93 @@
             <!-- /.container-lg -->
         </div>
         <!-- /.nav -->
-        <div class="hero"></div>
+        <div class="hero">
+            <div class="header_inner">
+                <div class="header-title">
+                    <h1 data-animation="innerAnimated fadeInUp" data-delay="200">
+                        Bring your highest potential to reality
+                    </h1>
+                    <p class="sup" data-animation="innerAnimated fadeInUp" data-delay="100">
+                        <b>Overcoming organizational ADHD</b>
+                        If you’re constantly feeling your organization could do much better, frustrated with your
+                        results, and knowing you’re not achieving peak performance, scroll down, get diagnosed, and
+                        begin treating this condition, today.
+                    </p>
+                    <div class="btn_wrap" data-animation="innerAnimated fadeInUp" data-delay="300">
+                        <a class="btn">SERVICES</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.header_inner -->
+            <div class="btn_scroll" data-animation="innerAnimated fadeInUp" data-delay="300">
+                <a data-goto="#slider" class="btn">Scroll Down</a>
+            </div>
+            <!-- /.btn_scroll -->
+            <div class="header_imgs-wrap" data-animation="animationContainer">
+                <div class="header_img" data-animation="innerAnimated fadeInUpScreen" data-delay="1300">
+                    <img src="img/hero/1.png" alt="G">
+                </div>
+                <div class="header_img">
+                    <img src="img/hero/2.png" alt="Wave">
+                </div>
+            </div>
+            <!-- /.header_imgs-wrap -->
+        </div>
         <!-- /.hero -->
     </header>
     <!-- /.header -->
+    <main>
+
+    </main>
+
+    <script src="src/js/jquery.js"></script>
+    <!-- <script src="/slick/slick.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./src/js/index.min.js"></script>
+    <script>
+        // LOADER
+        jQuery(window).on('load', function() {
+            'use strict';
+            jQuery('#loader').css('opacity', 0);
+            setTimeout(function() {
+                jQuery('#loader').hide();
+            }, 350);
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slider-center').slick({
+                centerMode: true,
+                arrows: false,
+                dots: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            dots: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 
 </html>

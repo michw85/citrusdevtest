@@ -9,4 +9,92 @@
 
 .container-lg {
   width: 1825px;
+}
+
+/* lexend-regular - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend/lexend-v17-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lexend/lexend-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lexend/lexend-v17-latin-regular.woff2") format("woff2"), url("../fonts/lexend/lexend-v17-latin-regular.woff") format("woff"), url("../fonts/lexend/lexend-v17-latin-regular.ttf") format("truetype"), url("../fonts/lexend/lexend-v17-latin-regular.svg#Lexend") format("svg"); /* Legacy iOS */
+}
+/* lexend-500 - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/lexend/lexend-v17-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lexend/lexend-v17-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/lexend/lexend-v17-latin-500.woff2") format("woff2"), url("../fonts/lexend/lexend-v17-latin-500.woff") format("woff"), url("../fonts/lexend/lexend-v17-latin-500.ttf") format("truetype"), url("../fonts/lexend/lexend-v17-latin-500.svg#Lexend") format("svg"); /* Legacy iOS */
+}
+/* lexend-700 - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lexend/lexend-v17-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lexend/lexend-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/lexend/lexend-v17-latin-700.woff2") format("woff2"), url("../fonts/lexend/lexend-v17-latin-700.woff") format("woff"), url("../fonts/lexend/lexend-v17-latin-700.ttf") format("truetype"), url("../fonts/lexend/lexend-v17-latin-700.svg#Lexend") format("svg"); /* Legacy iOS */
+}
+/* lexend-800 - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/lexend/lexend-v17-latin-800.eot"); /* IE9 Compat Modes */
+  src: local("") url("../fonts/lexend/lexend-v17-latin-800.eot?#iefix") format("embedded-opentype"), url("../fonts/lexend/lexend-v17-latin-800.woff2") format("woff2"), url("../fonts/lexend/lexend-v17-latin-800.woff") format("woff"), url("../fonts/lexend/lexend-v17-latin-800.ttf") format("truetype"), url("../fonts/lexend/lexend-v17-latin-800.svg#Lexend") format("svg"); /* Legacy iOS */
+}
+/* All Round Gothic - Book*/
+@font-face {
+  font-family: "All Round Gothic W03 Book";
+  font-style: normal;
+  src: url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.eot"); /* IE9*/
+  src: url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.eot?#iefix") format("embedded-opentype"), url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.woff2") format("woff2"), url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.woff") format("woff"), url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.ttf") format("truetype"), url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.svg#All Round Gothic W03 Book") format("svg"); /* iOS 4.1- */
+}
+body {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* lexend-regular - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend/lexend-v17-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lexend/lexend-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lexend/lexend-v17-latin-regular.woff2") format("woff2"), url("../fonts/lexend/lexend-v17-latin-regular.woff") format("woff"), url("../fonts/lexend/lexend-v17-latin-regular.ttf") format("truetype"), url("../fonts/lexend/lexend-v17-latin-regular.svg#Lexend") format("svg"); /* Legacy iOS */
+}
+/* lexend-500 - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/lexend/lexend-v17-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lexend/lexend-v17-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/lexend/lexend-v17-latin-500.woff2") format("woff2"), url("../fonts/lexend/lexend-v17-latin-500.woff") format("woff"), url("../fonts/lexend/lexend-v17-latin-500.ttf") format("truetype"), url("../fonts/lexend/lexend-v17-latin-500.svg#Lexend") format("svg"); /* Legacy iOS */
+}
+/* lexend-700 - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lexend/lexend-v17-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lexend/lexend-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/lexend/lexend-v17-latin-700.woff2") format("woff2"), url("../fonts/lexend/lexend-v17-latin-700.woff") format("woff"), url("../fonts/lexend/lexend-v17-latin-700.ttf") format("truetype"), url("../fonts/lexend/lexend-v17-latin-700.svg#Lexend") format("svg"); /* Legacy iOS */
+}
+/* lexend-800 - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/lexend/lexend-v17-latin-800.eot"); /* IE9 Compat Modes */
+  src: local("") url("../fonts/lexend/lexend-v17-latin-800.eot?#iefix") format("embedded-opentype"), url("../fonts/lexend/lexend-v17-latin-800.woff2") format("woff2"), url("../fonts/lexend/lexend-v17-latin-800.woff") format("woff"), url("../fonts/lexend/lexend-v17-latin-800.ttf") format("truetype"), url("../fonts/lexend/lexend-v17-latin-800.svg#Lexend") format("svg"); /* Legacy iOS */
+}
+/* All Round Gothic - Book*/
+@font-face {
+  font-family: "All Round Gothic W03 Book";
+  font-style: normal;
+  src: url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.eot"); /* IE9*/
+  src: url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.eot?#iefix") format("embedded-opentype"), url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.woff2") format("woff2"), url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.woff") format("woff"), url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.ttf") format("truetype"), url("../fonts/allroundgothic/4387b781fdcc752283b72bdc76757065.svg#All Round Gothic W03 Book") format("svg"); /* iOS 4.1- */
+}
+.header {
+  background-image: url(../../img/hero/hero.jpg);
 }/*# sourceMappingURL=style.css.map */
