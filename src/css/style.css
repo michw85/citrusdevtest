@@ -230,6 +230,7 @@ p {
   background: #ffbb3d;
   color: #000000;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .btn_orange:hover {
   background-color: #000000;
@@ -933,6 +934,12 @@ p {
   padding: 88.5px 33px 67.5px 25.6px;
   box-sizing: content-box;
 }
+@media (max-width: 1537px) {
+  .slider .slide-img1 {
+    max-width: 134.4px;
+    padding: 75.5px 33px 66.5px 30.6px;
+  }
+}
 @media (max-width: 1024px) {
   .slider .slide-img1 {
     padding: 60.1px 11.1px 51.1px 10px;
@@ -960,6 +967,11 @@ p {
   padding: 37.1px 33px 37.4px 41.5px;
   box-sizing: content-box;
 }
+@media (max-width: 1537px) {
+  .slider .slide-img2 {
+    padding: 33.5px 33px 31.4px 33.5px;
+  }
+}
 @media (max-width: 1024px) {
   .slider .slide-img2 {
     padding: 10.1px 11.1px 11.1px 10px;
@@ -984,6 +996,11 @@ p {
   border-radius: 50%;
   padding: 37.1px 33px 37.4px 41.5px;
   box-sizing: content-box;
+}
+@media (max-width: 1537px) {
+  .slider .slide-img3 {
+    padding: 33.5px 33px 31.4px 33.5px;
+  }
 }
 @media (max-width: 1024px) {
   .slider .slide-img3 {
