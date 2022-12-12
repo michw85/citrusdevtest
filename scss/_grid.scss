@@ -1,12 +1,19 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-.container{
-    width: 1220px;
-    margin: auto;
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.container-lg{
-    width: 1825px;
-}
+// .container_lg {
+    
+// }
+
+// .cont_md {
+//     max-width: 1739px;
+// }

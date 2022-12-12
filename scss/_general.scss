@@ -1,6 +1,204 @@
 @import './_fonts.scss';
 
-body {
-    @include regular;
+/*  Tags  */
+
+html {
     font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+    @include regular;
+}
+
+section,
+footer {
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    image-rendering: -webkit-optimize-contrast;
+    width: 100%;
+    display: block;
+}
+
+/* Typography */
+
+h1 {
+    @include book;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: normal;
+    max-width: 690px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include extrabold;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    color: $white;
+    font-size: 63px;
+    line-height: 76px;
+
+    // @media (max-width: 1679px) {
+    // }
+
+    // @media (max-width: 1439px) {
+    // }
+
+    // @media (max-width: 1023px) {
+    // }
+
+    // @media (max-width: 600px) {
+    // }
+
+    // @media (max-width: 479px) {
+    // }
+}
+
+h2 {
+    color: $black;
+    font-size: 40px;
+    line-height: 41px;
+
+    // @media (max-width: 1439px) {
+    // }
+
+    // @media (max-width: 1023px) {
+    // }
+
+    // @media (max-width: 767px) {
+    // }
+
+    // @media (max-width: 479px) {
+    // }
+
+}
+
+p {
+    @include regular;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+    // @media (max-width: 1023px) {
+    // }
+}
+
+/*  General Classes */
+
+/*Buttons*/
+
+.btn {
+    @include extrabold;
+    font-size: 23px;
+    line-height: 25px;
+    letter-spacing: 0;
+    padding: 6px 43px 5px;
+    border-radius: 33px;
+    cursor: pointer;
+
+    // @media (max-width: 767px) {
+    // }
+}
+
+.btn_orange {
+    background: $main-col;
+    color: $black;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $black;
+        color: $main-col;
+    }
+}
+
+.btn_black {
+    background: $black;
+    color: $main-col;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.66px;
+    text-transform: uppercase;
+    padding: 3px 20px 5px;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+}
+
+// /*  Loader  */
+
+#loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $white;
+    z-index: 1000;
+    -webkit-transition: 0.3s ease opacity;
+    transition: 0.3s ease opacity;
+}
+
+#loader:before,
+#loader:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation-name: loaderCircleAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#loader:after {
+    animation-delay: 1s;
+}
+
+@keyframes loaderCircleAnim {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    10% {
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+    }
+
+    80% {
+        width: 60px;
+        height: 60px;
+        opacity: 0.1;
+    }
+
+    100% {
+        width: 70px;
+        height: 70px;
+        opacity: 0;
+    }
 }

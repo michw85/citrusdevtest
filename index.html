@@ -12,6 +12,7 @@
     <link rel="stylesheet"
         href="https://db.onlinewebfonts.com/c/4387b781fdcc752283b72bdc76757065?family=All+Round+Gothic+W03+Book"
         type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
@@ -21,114 +22,159 @@
     <div id="loader"></div>
 
     <header class="header" id="top">
-        <div class="nav">
-            <div class="container-lg cont">
-                <div class="menu-button">
-                    <a id="nav-icon" class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                    <!-- /.hamburger-->
+        <div class="inner-section">
+            <div class="nav">
+                <div class="container_lg" id="container">
+                    <div class="item">
+                        <nav class="navi" id="menu">
+                            <ul>
+                                <li><a href="#" target="_blank">HOME</a></li>
+                                <li><a href="#" target="_blank">ABOUT US</a></li>
+                                <li><a href="#" target="_blank">Organizational ADHD</a></li>
+                                <li><a href="#" target="_blank">Approach & Methodology</a></li>
+                                <li><a href="#" target="_blank">Services</a></li>
+                                <li><a href="#" target="_blank">Courses</a></li>
+                                <li><a href="#" target="_blank">Case Studies</a></li>
+                                <li><a href="#" target="_blank">Resource Center</a></li>
+                                <li><a href="#" target="_blank">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                        <div class="menu-button">
+                            <a id="nav-icon" class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.menu-button -->
+                    <div class="item">
+                        <div class="logo navbar__logo">
+                            <a href="#" target="_blank">
+                                <img src="img/hero/logo.svg" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.logo-->
                 </div>
-                <!-- /.menu-button -->
-                <div class="logo navbar__logo">
-                    <a href="#" target="_blank">
-                        <img src="img/hero/logo.svg" alt="Logo">
-                    </a>
-                </div>
-                <!-- /.logo-->
+                <!-- /.container-lg -->
             </div>
-            <!-- /.container-lg -->
-        </div>
-        <!-- /.nav -->
-        <div class="hero">
-            <div class="header_inner">
-                <div class="header-title">
-                    <h1 data-animation="innerAnimated fadeInUp" data-delay="200">
-                        Bring your highest potential to reality
-                    </h1>
-                    <p class="sup" data-animation="innerAnimated fadeInUp" data-delay="100">
-                        <b>Overcoming organizational ADHD</b>
-                        If you’re constantly feeling your organization could do much better, frustrated with your
-                        results, and knowing you’re not achieving peak performance, scroll down, get diagnosed, and
-                        begin treating this condition, today.
-                    </p>
-                    <div class="btn_wrap" data-animation="innerAnimated fadeInUp" data-delay="300">
-                        <a class="btn">SERVICES</a>
+            <!-- /.nav -->
+            <div class="hero">
+                <div class="header_inner">
+                    <div class="header-title">
+                        <h1 data-animation="innerAnimated fadeInUp" data-delay="200">
+                            Bringine your highest potential to reality.
+                        </h1>
+                        <p class="sup bold" data-animation="innerAnimated fadeInUp" data-delay="100">
+                            <b>Overcoming organizational ADHD</b>
+                        </p>
+                        <p class="sup content" data-animation="innerAnimated fadeInUp" data-delay="100">
+
+                            If you’re constantly feeling your organization could do much better, frustrated with your
+                            results, and knowing you’re not achieving peak performance, scroll down, get diagnosed, and
+                            begin treating this condition, today.
+                        </p>
+                        <div class="btn_wrap" data-animation="innerAnimated fadeInUp" data-delay="300">
+                            <a class="btn btn_orange">SERVICES</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- /.header_inner -->
-            <div class="btn_scroll" data-animation="innerAnimated fadeInUp" data-delay="300">
-                <a data-goto="#slider" class="btn">Scroll Down</a>
-            </div>
-            <!-- /.btn_scroll -->
-            <div class="header_imgs-wrap" data-animation="animationContainer">
-                <div class="header_img" data-animation="innerAnimated fadeInUpScreen" data-delay="1300">
-                    <img src="img/hero/1.png" alt="G">
+                <!-- /.header_inner -->
+                <div class="btn_scroll" data-animation="innerAnimated fadeInUp" data-delay="300">
+                    <p data-goto="#slider" class="btn_scroll-content">Scroll Down </p>
+                    <a data-goto="#slider">
+                        <img src="img/hero/arrow-down.svg" alt="arrow-down">
+                    </a>
                 </div>
-                <div class="header_img">
-                    <img src="img/hero/2.png" alt="Wave">
+
+                <!-- /.btn_scroll -->
+                <div class="header_imgs-wrap" data-animation="animationContainer">
+                    <div class="header_img" data-animation="innerAnimated fadeInUpScreen" data-delay="1300">
+                        <img src="img/hero/1.png" alt="G">
+                    </div>
+                    <div class="header_img">
+                        <img src="img/hero/2.png" alt="Wave">
+                    </div>
                 </div>
+                <!-- /.header_imgs-wrap -->
             </div>
-            <!-- /.header_imgs-wrap -->
+            <!-- /.hero -->
         </div>
-        <!-- /.hero -->
+        <!-- /.inner-section -->
     </header>
     <!-- /.header -->
     <main>
-
+        <section class="slider" id="slider">
+            <div class="container">
+                <div class="slider-center">
+                    <div class="slide">
+                        <div class="item">
+                            <img src="./img/slider/diagnosis-active.svg" class="slide-img1" alt="slide1">
+                        </div>
+                        <div class="item">
+                            <div class="grid">
+                                <h2>Get the right diagnosis</h2>
+                                <p>Do you have a sense that things should – and could be going much better for your
+                                    organization?
+                                    Like most companies today, it could be that organizational ADHD is holding you
+                                    back.</p>
+                                <div class="btn btn_black">Diagnose your organization >></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="item">
+                            <img src="./img/slider/prescription-active.svg" class="slide-img2" alt="slide2">
+                        </div>
+                        <div class="item">
+                            <div class="grid">
+                                <h2>The Deutsch Group prescription</h2>
+                                <p>Implementing insights gained through our successes, along with valuable lessons
+                                    learned through failure, we help you boost your organization’s ELP® (Energy,
+                                    Leadership, Performance) Score so that you can move up to the next level</p>
+                                <div class="btn btn_black">Get your prescription filled >></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="item">
+                            <img src="./img/slider/prescription-active.svg" class="slide-img2" alt="slide2">
+                        </div>
+                        <div class="item">
+                            <div class="grid">
+                                <h2>3</h2>
+                                <p>Implementing insights gained through our successes, along with valuable lessons
+                                    learned through failure, we help you boost your organization’s ELP® (Energy,
+                                    Leadership, Performance) Score so that you can move up to the next level</p>
+                                <div class="btn btn_black">Get your prescription filled >></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="item">
+                            <img src="./img/slider/prescription-active.svg" class="slide-img2" alt="slide2">
+                        </div>
+                        <div class="item">
+                            <div class="grid">
+                                <h2>4</h2>
+                                <p>Implementing insights gained through our successes, along with valuable lessons
+                                    learned through failure, we help you boost your organization’s ELP® (Energy,
+                                    Leadership, Performance) Score so that you can move up to the next level</p>
+                                <div class="btn btn_black">Get your prescription filled >></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script src="src/js/jquery.js"></script>
-    <!-- <script src="/slick/slick.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./src/js/index.min.js"></script>
-    <script>
-        // LOADER
-        jQuery(window).on('load', function() {
-            'use strict';
-            jQuery('#loader').css('opacity', 0);
-            setTimeout(function() {
-                jQuery('#loader').hide();
-            }, 350);
-        });
-    </script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.slider-center').slick({
-                centerMode: true,
-                arrows: false,
-                dots: true,
-                centerPadding: '60px',
-                slidesToShow: 3,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                responsive: [{
-                        breakpoint: 768,
-                        settings: {
-                            arrows: false,
-                            dots: false,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
 </body>
 
 </html>

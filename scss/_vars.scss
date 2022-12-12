@@ -1,0 +1,34 @@
+/* colors */
+
+$main-col: #ffbb3d;
+$white: #ffffff;
+$black: #000000;
+
+/* Flex-box */
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-column {
+    @include flex-center;
+    flex-direction: column;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center-horiz {
+    display: flex;
+    justify-content: center;
+}

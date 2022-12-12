@@ -1,0 +1,126 @@
+.slider {
+    background-color: $main-col;
+    margin-top: -1px;
+    padding: 188px 0 178px;
+
+    .slide {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 26px;
+
+        img {
+            margin-left: 50px;
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        p {
+            margin-top: 10px;
+            max-width: 740px;
+        }
+
+        .btn {
+            margin-top: 10px;
+            display: inline-block;
+        }
+    }
+
+    .slide-img1 {
+        max-width: 163.4px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 88.5px 33px 67.5px 25.6px;
+        box-sizing: content-box;
+    }
+
+    .slide-img2 {
+        max-width: 147.5px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 37.1px 33px 37.4px 41.5px;
+        box-sizing: content-box;
+    }
+
+    .slick-dots {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 14px;
+        justify-items: end;
+        max-width: 340px;
+        float: right;
+    }
+
+    .slick-dots li {
+        list-style-type: none;
+    }
+
+    .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 62px;
+        border-radius: 50%;
+        height: 62px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background-color: $white;
+        padding: 10px;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: grayscale(1);
+    }
+
+    .slick-dots {
+        .slick-active {
+            button {
+                filter: grayscale(0) !important;
+            }
+        }
+    }
+
+    .slick-dots li:nth-child(1) button {
+        background-image: url(../../img/slider/diagnosis-active.svg);
+    }
+
+    .slick-dots li:nth-child(2) button {
+        background-image: url(../../img/slider/prescription-active.svg);
+    }
+
+    .slick-dots li:nth-child(3) button {
+        background-image: url(../../img/slider/brain-active.svg);
+    }
+
+    .slick-dots li:nth-child(4) button {
+        background-image: url(../../img/slider/ecosistem-active.svg);
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        margin: -15px 0 0 0;
+        z-index: 2;
+        font-size: 0;
+        width: 11.1px;
+        height: 15.9px;
+        border: none;
+    }
+
+    .slick-prev {
+        left: 0;
+        cursor: pointer;
+        background: url('../../img/slider/slider-arrow.svg') 0 0 / 100% no-repeat;
+        transform: rotate(-180deg);
+    }
+
+    .slick-next {
+        right: 0;
+        cursor: pointer;
+        background: url('../../img/slider/slider-arrow.svg') 0 0 / 100% no-repeat;
+    }
+}
