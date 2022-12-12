@@ -10,10 +10,18 @@
   justify-content: space-between;
   flex: 1 1;
 
+  @media (max-width: 1024px) {
+    padding: 55px 0;
+}
+
   &.reverse {
     flex-direction: row-reverse;
     padding: 80px 90px 0 0;
     height: 100vh;
+
+    @media (max-width: 1024px) {
+      padding: 55px 30px;
+  }
 
     .item {
       &:nth-of-type(1) {
@@ -24,7 +32,7 @@
 
   .item {
     &:nth-of-type(1) {
-      padding-bottom: 10px;
+      padding-bottom: 33px;
       align-self: center;
     }
 
@@ -32,23 +40,16 @@
       text-align: end;
     }
   }
-
-  // @media (max-width: 1279px) {
-  //   padding: 30px 0;
-  // }
-
-  // @media (max-width: 767px) {
-  //   padding: 25px 0;
-  // }
-
 }
-
-
 
 .logo {
   width: 210px;
   float: right;
   margin-right: 96px;
+
+  @media (max-width: 640px) {
+    margin-right: 30px;
+}
 }
 
 /*  Hamburger   */
@@ -97,10 +98,20 @@
   ul {
     flex: 1 1 auto;
     padding: 207px 0 218px 237px;
+
+    @media (max-width: 768px) {
+      padding: 130px 0 150px 30px;
+  }
   }
 
   li {
     display: block;
+
+    &.active {
+      a {
+        color: $main-col;
+      }
+    }
 
     a {
       color: $white;
@@ -108,13 +119,17 @@
       font-size: 45px;
       line-height: 41px;
       text-decoration: none;
+
+      @media (max-width: 768px) {
+        font-size: 35px;
+      line-height: 31px;
+    }
     }
   }
 
   li+li {
     margin: 16px 0;
   }
-
 }
 
 .hamburger {
@@ -123,6 +138,9 @@
   z-index: 1001;
   left: 0;
   margin-left: 96px;
+  @media (max-width: 768px) {
+    margin-left: 30px;
+}
 
   .hamburger-box {
     width: 35px;

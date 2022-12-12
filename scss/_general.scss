@@ -51,20 +51,25 @@ h1 {
     font-size: 63px;
     line-height: 76px;
 
-    // @media (max-width: 1679px) {
-    // }
+    @media (max-width: 1441px) {
+        font-size: 50px;
+        line-height: 61px;
+    }
 
-    // @media (max-width: 1439px) {
-    // }
+    @media (max-width: 1281px) {
+        font-size: 46px;
+        line-height: 56px;
+    }
 
-    // @media (max-width: 1023px) {
-    // }
+    @media (max-width: 1024px) {
+        font-size: 39px;
+        line-height: 47px;
+    }
 
-    // @media (max-width: 600px) {
-    // }
-
-    // @media (max-width: 479px) {
-    // }
+    @media (max-width: 481px) {
+        font-size: 35px;
+        line-height: 41px;
+    }
 }
 
 h2 {
@@ -72,11 +77,20 @@ h2 {
     font-size: 40px;
     line-height: 41px;
 
-    // @media (max-width: 1439px) {
-    // }
+    @media (max-width: 1441px) {
+        font-size: 36px;
+        line-height: 37px;
+    }
 
-    // @media (max-width: 1023px) {
-    // }
+    @media (max-width: 1281px) {
+        font-size: 34px;
+        line-height: 35px;
+    }
+
+    @media (max-width: 481px) {
+        font-size: 29px;
+        line-height: 30px;
+    }
 
     // @media (max-width: 767px) {
     // }
@@ -94,8 +108,24 @@ p {
     padding: 0;
     margin: 0;
 
-    // @media (max-width: 1023px) {
-    // }
+    @media (max-width: 1441px) {
+        font-size: 22x;
+        line-height: 28px;
+    }
+
+    @media (max-width: 1281px) {
+        font-size: 20x;
+        line-height: 26px;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    @media (max-width: 481px) {
+        font-size: 19px;
+        line-height: 25px;
+    }
 }
 
 /*  General Classes */
@@ -111,8 +141,20 @@ p {
     border-radius: 33px;
     cursor: pointer;
 
-    // @media (max-width: 767px) {
-    // }
+    @media (max-width: 1441px) {
+        font-size: 21px;
+        line-height: 23px;
+    }
+
+    @media (max-width: 1281px) {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    @media (max-width: 481px) {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 
 .btn_orange {

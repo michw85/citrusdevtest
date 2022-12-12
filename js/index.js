@@ -1,4 +1,5 @@
 // LOADER
+
 jQuery(window).on("load", function () {
   "use strict";
   jQuery("#loader").css("opacity", 0);
@@ -8,6 +9,7 @@ jQuery(window).on("load", function () {
 });
 
 //Hamburger
+
 document.addEventListener("DOMContentLoaded", function (event) {
   let menuOpen = document.getElementById("menu");
   let menuIcon = document.getElementById("nav-icon");
@@ -28,43 +30,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
     });
   }
-
-  //Scroll to anchor
-  const menuLinks = document.querySelectorAll("a[data-goto]");
-
-  if (menuLinks.length > 0) {
-    menuLinks.forEach((menuLink) => {
-      menuLink.addEventListener("click", onMenuLink);
-    });
-
-    function onMenuLink(e) {
-      const menuLink = e.target;
-      if (
-        menuLink.dataset.goto &&
-        document.querySelector(menuLink.dataset.goto)
-      ) {
-        const gotoSection = document.querySelector(menuLink.dataset.goto);
-        const gotoSectionValue =
-          gotoSection.getBoundingClientRect().top +
-          pageYOffset -
-          document.getElementById("top").offsetHeight;
-
-        if (menuOpen.classList.contains("is-active")) {
-          menuIcon.classList.remove("open");
-          body.classList.remove("scroll-hidden");
-          menuOpen.classList.remove("is-active");
-        }
-
-        window.scrollTo({
-          duration: 1500,
-          top: gotoSectionValue,
-          behavior: "smooth",
-        });
-        e.preventDefault();
-      }
-    }
-  }
 });
+// Active Page
+$(document).ready(function () {
+  $("ul.navigation a").each(function () {
+    if (this.href == location.href) $(this).parent().addClass("active");
+  });
+});
+
+// Slick slider
 
 $(document).ready(function () {
   $(".slider-center").slick({
@@ -78,19 +52,10 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          arrows: false,
+          arrows: true,
           dots: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
+        //   centerMode: true,
+        //   centerPadding: "40px",
           slidesToShow: 1,
         },
       },
